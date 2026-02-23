@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0f766e">
+    <link rel="apple-touch-icon" href="icon.png">
+    
+    <title>Mental Health Support & Resources Malaysia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        body.show-en .bm { display: none !important; }
+        body.show-bm .en { display: none !important; }
+        .btn-transition { transition: all 0.2s ease-in-out; }
+        .btn-transition:hover { transform: translateY(-2px); }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col show-en">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-3xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-semibold text-teal-700">
+                <span class="en">Support Hub</span>
+                <span class="bm">Pusat Sokongan</span>
+            </h1>
+            <div class="flex bg-slate-100 p-1 rounded-full border border-slate-200">
+                <button onclick="setLang('en')" id="btn-en" class="px-4 py-1.5 rounded-full text-sm font-semibold bg-white text-teal-700 shadow-sm transition">EN</button>
+                <button onclick="setLang('bm')" id="btn-bm" class="px-4 py-1.5 rounded-full text-sm font-semibold text-slate-500 hover:text-teal-700 transition">BM</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-3xl mx-auto px-4 py-8 w-full space-y-8">
+
+        <section class="text-center space-y-4">
+            <h2 class="text-2xl md:text-3xl font-semibold text-slate-800">
+                <span class="en">You Are Not Alone</span>
+                <span class="bm">Anda Tidak Keseorangan</span>
+            </h2>
+            <p class="text-slate-600 text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
+                <span class="en">Making the first step is the hardest part, but you don't have to carry this heavy feeling by yourself. The people at the other end of these lines are trained to listen, not to judge. It is completely okay if you don't know what to say, or if you just need to cry.</span>
+                <span class="bm">Membuat langkah pertama adalah perkara yang paling sukar, tetapi anda tidak perlu menanggung perasaan berat ini sendirian. Mereka di talian ini dilatih untuk mendengar, bukan untuk menghakimi. Tidak mengapa jika anda tidak tahu apa yang ingin diperkatakan, atau jika anda hanya mahu menangis.</span>
+            </p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                <div>
+                    <h3 class="font-semibold text-lg text-teal-700 mb-1">Talian HEAL (MOH)</h3>
+                    <p class="text-sm text-slate-500 mb-4">
+                        <span class="en">Free, fast, and confidential psychological support by the Ministry of Health.</span>
+                        <span class="bm">Sokongan psikologi percuma, pantas, dan sulit oleh Kementerian Kesihatan.</span>
+                    </p>
+                </div>
+                <a href="tel:15555" class="btn-transition block text-center w-full bg-teal-600 text-white py-3 rounded-xl font-medium shadow-sm hover:bg-teal-700">
+                    <span class="en">📞 Call 15555</span>
+                    <span class="bm">📞 Hubungi 15555</span>
+                </a>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                <div>
+                    <h3 class="font-semibold text-lg text-teal-700 mb-1">Befrienders KL</h3>
+                    <p class="text-sm text-slate-500 mb-4">
+                        <span class="en">Available 24/7. A safe, anonymous space to talk about anything that is hurting you.</span>
+                        <span class="bm">Beroperasi 24/7. Ruang yang selamat & tanpa nama untuk meluahkan perasaan anda.</span>
+                    </p>
+                </div>
+                <a href="tel:0376272929" class="btn-transition block text-center w-full bg-teal-600 text-white py-3 rounded-xl font-medium shadow-sm hover:bg-teal-700">
+                    <span class="en">📞 Call 03-7627 2929</span>
+                    <span class="bm">📞 Hubungi 03-7627 2929</span>
+                </a>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                <div>
+                    <h3 class="font-semibold text-lg text-rose-600 mb-1">Talian Kasih</h3>
+                    <p class="text-sm text-slate-500 mb-4">
+                        <span class="en"><strong>Focus:</strong> Family problems, domestic abuse, child protection, and emotional distress.</span>
+                        <span class="bm"><strong>Fokus:</strong> Masalah keluarga, penderaan domestik, perlindungan kanak-kanak & tekanan emosi.</span>
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <a href="tel:15999" class="btn-transition flex items-center justify-center bg-rose-500 text-white py-3 rounded-xl font-medium text-sm shadow-sm hover:bg-rose-600">📞 Call 15999</a>
+                    <a href="https://wa.me/60192615999" target="_blank" class="btn-transition flex items-center justify-center bg-green-500 text-white py-3 rounded-xl font-medium text-sm shadow-sm hover:bg-green-600">💬 WhatsApp</a>
+                </div>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-100 flex flex-col justify-between">
+                <div>
+                    <h3 class="font-semibold text-lg text-blue-600 mb-1">MIASA Crisis Line</h3>
+                    <p class="text-sm text-slate-500 mb-4">
+                        <span class="en">24-hour crisis support managed by peers and mental health professionals.</span>
+                        <span class="bm">Sokongan krisis 24-jam dikendalikan oleh rakan sebaya dan pakar kesihatan mental.</span>
+                    </p>
+                </div>
+                <div class="grid grid-cols-2 gap-2">
+                    <a href="tel:1800820066" class="btn-transition flex items-center justify-center bg-blue-600 text-white py-3 rounded-xl font-medium text-sm shadow-sm hover:bg-blue-700">📞 Call</a>
+                    <a href="https://wa.me/60397656088" target="_blank" class="btn-transition flex items-center justify-center bg-green-500 text-white py-3 rounded-xl font-medium text-sm shadow-sm hover:bg-green-600">💬 WhatsApp</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="border-t border-slate-200 my-8"></div>
+
+        <section class="space-y-6">
+            <h2 class="text-xl md:text-2xl font-semibold text-slate-800 text-center">
+                <span class="en">Calm Your Mind</span>
+                <span class="bm">Tenangkan Minda Anda</span>
+            </h2>
+
+            <div class="space-y-4">
+                <div class="bg-indigo-50 p-5 rounded-2xl border border-indigo-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <h4 class="font-semibold text-indigo-800 mb-2">🧠 The 5-4-3-2-1 Grounding</h4>
+                        <p class="text-sm text-indigo-900 leading-relaxed mb-3">
+                            <span class="en">Feeling overwhelmed? Bring your mind back to the present. Find:</span>
+                            <span class="bm">Rasa terbeban? Bawa minda kembali ke masa kini. Cari:</span>
+                        </p>
+                        <ul class="text-sm text-indigo-800 list-disc list-inside space-y-1">
+                            <li><span class="en"><strong>5</strong> things you can see</span><span class="bm"><strong>5</strong> benda anda boleh lihat</span></li>
+                            <li><span class="en"><strong>4</strong> things you can touch</span><span class="bm"><strong>4</strong> benda anda boleh sentuh</span></li>
+                            <li><span class="en"><strong>3</strong> things you can hear</span><span class="bm"><strong>3</strong> bunyi anda boleh dengar</span></li>
+                            <li><span class="en"><strong>2</strong> things you can smell</span><span class="bm"><strong>2</strong> bau anda boleh hidu</span></li>
+                            <li><span class="en"><strong>1</strong> thing you can taste</span><span class="bm"><strong>1</strong> benda anda boleh rasa</span></li>
+                        </ul>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=30VMIEmA114" target="_blank" class="shrink-0 flex items-center justify-center gap-2 bg-white border border-indigo-200 text-indigo-700 px-4 py-3 rounded-xl text-sm font-medium hover:bg-indigo-100 transition shadow-sm">
+                        <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        <span class="en">Watch Guide</span>
+                        <span class="bm">Tonton Panduan</span>
+                    </a>
+                </div>
+
+                <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                    <div>
+                        <h4 class="font-semibold text-blue-800 mb-2">🫁 Box Breathing</h4>
+                        <p class="text-sm text-blue-900 leading-relaxed">
+                            <span class="en">Breathe in deeply for <strong>4 seconds</strong>. Hold your breath for <strong>4 seconds</strong>. Breathe out slowly for <strong>4 seconds</strong>. Pause for <strong>4 seconds</strong>. Repeat 4 times.</span>
+                            <span class="bm">Tarik nafas dalam-dalam selama <strong>4 saat</strong>. Tahan nafas selama <strong>4 saat</strong>. Hembus perlahan-lahan selama <strong>4 saat</strong>. Berhenti seketika selama <strong>4 saat</strong>. Ulang 4 kali.</span>
+                        </p>
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=tEmt1Znux58" target="_blank" class="shrink-0 flex items-center justify-center gap-2 bg-white border border-blue-200 text-blue-700 px-4 py-3 rounded-xl text-sm font-medium hover:bg-blue-100 transition shadow-sm">
+                        <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+                        <span class="en">1-Min Visual Guide</span>
+                        <span class="bm">Panduan Visual 1-Min</span>
+                    </a>
+                </div>
+
+                <div class="bg-rose-50 p-5 rounded-2xl border border-rose-100">
+                    <h4 class="font-semibold text-rose-800 mb-2">❤️ Validating Your Stress</h4>
+                    <p class="text-sm text-rose-900 leading-relaxed">
+                        <span class="en">Be kind to yourself today. It is okay to not be okay. You are not broken, you are just exhausted from carrying too much weight for too long.</span>
+                        <span class="bm">Berlembutlah dengan diri anda hari ini. Tidak mengapa jika anda berasa kurang baik. Anda tidak "rosak", anda cuma kepenatan memikul beban yang terlalu berat.</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="mt-8 text-center bg-white p-6 rounded-2xl shadow-sm border border-slate-100">
+                <p class="text-sm text-slate-600 mb-4">
+                    <span class="en">Want to learn more? Read verified guides from these organizations:</span>
+                    <span class="bm">Ingin faham lebih lanjut? Baca panduan dari organisasi ini:</span>
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-3">
+                    <a href="https://infosihat.moh.gov.my/images/media_sihat/garis_panduan/pdf/Modul%20Minda%20Sihat.pdf" target="_blank" class="px-4 py-3 bg-slate-50 text-slate-700 border border-slate-200 rounded-lg text-sm font-medium hover:bg-slate-100 transition shadow-sm">📘 Modul Minda Sihat (MOH)</a>
+                    <a href="https://miasa.org.my/mental-health-topics/" target="_blank" class="px-4 py-3 bg-slate-50 text-slate-700 border border-slate-200 rounded-lg text-sm font-medium hover:bg-slate-100 transition shadow-sm">📗 MIASA Topics</a>
+                    <a href="https://relate.com.my/what-is-mental-health-and-wellness/mental-resilience/" target="_blank" class="px-4 py-3 bg-slate-50 text-slate-700 border border-slate-200 rounded-lg text-sm font-medium hover:bg-slate-100 transition shadow-sm">📙 Relate Malaysia</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-800 text-slate-400 py-8 mt-auto">
+        <div class="max-w-3xl mx-auto px-4 text-xs md:text-sm text-center space-y-3">
+            <p>
+                <strong class="text-slate-200"><span class="en">IMPORTANT DISCLAIMER:</span><span class="bm">PENAFIAN PENTING:</span></strong><br>
+                <span class="en">This web app is strictly a resource directory to help you find support easily. It is <strong>NOT</strong> a replacement for medical emergency services, therapy, or professional psychiatric care.</span>
+                <span class="bm">Aplikasi web ini hanyalah direktori sumber untuk membantu anda mencari sokongan. Ia <strong>BUKAN</strong> pengganti perkhidmatan kecemasan perubatan, terapi, atau penjagaan psikiatri profesional.</span>
+            </p>
+            <p class="text-rose-400 font-medium">
+                <span class="en">If you are in immediate physical danger or have harmed yourself, please go to the nearest hospital Emergency Department (Kecemasan) or call 999 immediately.</span>
+                <span class="bm">Jika anda berada dalam bahaya fizikal yang mendesak atau telah mencederakan diri, sila ke Jabatan Kecemasan hospital terdekat atau hubungi 999 dengan segera.</span>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Language Toggle
+        function setLang(lang) {
+            const body = document.body;
+            const btnEn = document.getElementById('btn-en');
+            const btnBm = document.getElementById('btn-bm');
+
+            if (lang === 'en') {
+                body.classList.replace('show-bm', 'show-en');
+                btnEn.className = "px-4 py-1.5 rounded-full text-sm font-semibold bg-white text-teal-700 shadow-sm transition";
+                btnBm.className = "px-4 py-1.5 rounded-full text-sm font-semibold text-slate-500 hover:text-teal-700 transition";
+            } else {
+                body.classList.replace('show-en', 'show-bm');
+                btnBm.className = "px-4 py-1.5 rounded-full text-sm font-semibold bg-white text-teal-700 shadow-sm transition";
+                btnEn.className = "px-4 py-1.5 rounded-full text-sm font-semibold text-slate-500 hover:text-teal-700 transition";
+            }
+        }
+
+        // Service Worker Registration for PWA Installation
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registered successfully');
+                    })
+                    .catch(error => {
+                        console.log('ServiceWorker registration failed: ', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html>
